@@ -1,0 +1,24 @@
+name: Unit tests
+
+on: [push, pull_request]
+
+jobs:
+    test:
+        runs-on: ubuntu-20.04
+        steps:
+
+          - name: Checkout repository content
+            uses: actions/checkout@v2
+
+          - name: Setup Python
+            uses: actions/setup-python@v2
+            with:
+                python-version: 3.8
+
+          - name: Setup dev tools
+            run: |
+              pip install pipenv
+              pipenv install --dev
+
+          - name: Run pytest
+            run: pipenv run pytest
