@@ -6,9 +6,8 @@ A small [city][city]
 
 ```bash
 $ pip3 install pipenv
-$ cd miniciti
-miniciti $ pipenv install --dev
-miniciti $ pipenv run pytest
+$ pipenv install --dev
+$ pipenv run pytest
 ```
 
 ## Use as dependency
