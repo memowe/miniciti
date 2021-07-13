@@ -12,7 +12,13 @@ $ pipenv run pytest
 
 ## Use as dependency
 
-TODO
+`Pipfile`:
+
+```toml
+[packages]
+miniciti = { git = 'https://github.com/memowe/miniciti.git', ref = 'main' }
+...
+```
 
 ## Author and license
 
