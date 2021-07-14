@@ -2,6 +2,8 @@
 
 A small [city][city]
 
+[![Unit tests](https://github.com/memowe/miniciti/actions/workflows/test.yml/badge.svg)](https://github.com/memowe/miniciti/actions/workflows/test.yml)
+
 ## Run tests
 
 ```bash
